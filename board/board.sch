@@ -584,29 +584,18 @@ Wire Wire Line
 $Comp
 L 74xx:74LS00 U4
 U 2 1 613C7F5C
-P 3500 7450
-F 0 "U4" H 3400 7450 50  0000 L CNN
-F 1 "74LS00" H 3350 7250 50  0000 L CNN
-F 2 "my_logic:SOIC_14_L.1.18_W0.58_P1.27" H 3500 7450 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74ls00" H 3500 7450 50  0001 C CNN
-	2    3500 7450
-	-1   0    0    1   
-$EndComp
-$Comp
-L 74xx:74LS08 U5
-U 1 1 613C7F76
-P 2700 7550
-F 0 "U5" H 2700 7550 50  0000 C CNN
-F 1 "74LS08" H 2700 7324 50  0000 C CNN
-F 2 "my_logic:SC-74A_p0.95" H 2700 7550 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 2700 7550 50  0001 C CNN
-	1    2700 7550
+P 3650 7450
+F 0 "U4" H 3550 7450 50  0000 L CNN
+F 1 "74LS00" H 3500 7250 50  0000 L CNN
+F 2 "my_logic:SOIC_14_L.1.18_W0.58_P1.27" H 3650 7450 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74ls00" H 3650 7450 50  0001 C CNN
+	2    3650 7450
 	-1   0    0    1   
 $EndComp
 Text Label 5400 7650 0    50   ~ 0
 #DMA
 Wire Wire Line
-	3000 7650 5400 7650
+	3050 7650 5400 7650
 Wire Bus Line
 	4000 3450 5550 3450
 Connection ~ 800  3450
@@ -640,19 +629,8 @@ Wire Notes Line width 16
 Wire Wire Line
 	4200 6350 4200 7000
 Connection ~ 4200 7000
-Wire Wire Line
-	3400 7000 3850 7000
-Connection ~ 3850 7000
-Wire Wire Line
-	3850 7000 4200 7000
-Wire Wire Line
-	3800 7350 3850 7350
 Text Label 5400 7550 0    50   ~ 0
 CLK
-Wire Wire Line
-	5200 7550 3800 7550
-Wire Wire Line
-	3000 7450 3200 7450
 Entry Wire Line
 	2300 6550 2400 6650
 Wire Wire Line
@@ -674,8 +652,6 @@ Wire Wire Line
 	2400 7000 2750 7000
 Text Label 4000 6650 0    50   ~ 0
 a14
-Wire Wire Line
-	3850 7000 3850 7350
 $Comp
 L 74xx:74LS00 U4
 U 3 1 613C7F56
@@ -702,13 +678,13 @@ Wire Wire Line
 Wire Wire Line
 	4650 6900 4650 6650
 Wire Notes Line width 16
-	2300 6750 2300 7750
+	2250 6750 2250 7750
 Wire Notes Line width 16
-	2300 7750 4950 7750
+	2250 7750 4950 7750
 Wire Notes Line width 16
 	4950 7750 4950 6750
 Wire Notes Line width 16
-	2300 6750 4950 6750
+	2250 6750 4950 6750
 Wire Wire Line
 	4200 6350 3500 6350
 Wire Wire Line
@@ -717,7 +693,7 @@ Wire Wire Line
 	3500 3400 5300 3400
 Wire Wire Line
 	5300 3400 5300 2500
-Text Notes 1950 7250 0    50   ~ 10
+Text Notes 1900 7250 0    50   ~ 10
 address\ndecode
 Entry Wire Line
 	8150 5250 8250 5350
@@ -1537,7 +1513,6 @@ Wire Wire Line
 	5200 5600 5200 7550
 Wire Wire Line
 	5200 7550 5400 7550
-Connection ~ 5200 7550
 Wire Wire Line
 	7300 5950 6150 5950
 Wire Wire Line
@@ -1792,10 +1767,6 @@ Wire Wire Line
 	2400 5000 2400 6000
 Wire Wire Line
 	2400 6000 1850 6000
-Wire Wire Line
-	1850 6000 1850 7550
-Wire Wire Line
-	1850 7550 2400 7550
 Text Label 2750 1200 0    50   ~ 0
 #IRQ
 Text Label 3100 1900 0    50   ~ 0
@@ -1872,6 +1843,48 @@ Wire Wire Line
 	7300 5450 7400 5450
 Text Label 5000 7100 0    50   ~ 0
 #CS2
+Text Label 2400 5000 0    50   ~ 0
+#RAM_E
+Text Label 3300 7450 2    50   ~ 0
+NAND1
+$Comp
+L my_logic:2-AND U5
+U 1 1 61487A4B
+P 2850 7500
+F 0 "U5" H 3050 7750 50  0000 C CNN
+F 1 "2-AND" H 3050 7650 50  0000 C CNN
+F 2 "my_logic:SC-74A_p0.95" H 2850 7200 50  0001 C CNN
+F 3 "" H 2850 7200 50  0001 C CNN
+	1    2850 7500
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 7650 3050 7550
+Wire Wire Line
+	3050 7550 2950 7550
+Wire Wire Line
+	2350 7650 1850 7650
+Wire Wire Line
+	1850 6000 1850 7650
+Wire Wire Line
+	2950 7650 3000 7650
+Wire Wire Line
+	3400 7000 4200 7000
+Wire Wire Line
+	3950 7350 4200 7350
+Wire Wire Line
+	4200 7350 4200 7000
+Connection ~ 5200 7550
+Wire Wire Line
+	5200 7550 3950 7550
+Wire Wire Line
+	2950 7450 3350 7450
+Wire Wire Line
+	3000 7350 3000 7650
+Wire Wire Line
+	2350 7450 2300 7450
+Wire Wire Line
+	2300 7450 2300 7300
 Wire Bus Line
 	5200 3600 5550 3600
 Wire Bus Line
@@ -1922,6 +1935,8 @@ Wire Bus Line
 	4000 1800 4000 3450
 Wire Bus Line
 	800  3450 4000 3450
-Text Label 2400 5000 0    50   ~ 0
-#RAM_E
+Text Label 2300 7300 0    50   ~ 0
++5V
+Text Label 3000 7350 0    50   ~ 0
+GND
 $EndSCHEMATC
