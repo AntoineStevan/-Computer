@@ -415,18 +415,12 @@ Wire Wire Line
 	5350 1700 5150 1700
 Wire Wire Line
 	5350 1550 5350 1700
-Text Label 5150 1700 0    50   ~ 0
-VCC
-Text Label 5150 1800 0    50   ~ 0
-#WE
 Text Label 5150 2000 0    50   ~ 0
 a8
 Text Label 5150 2100 0    50   ~ 0
 a9
 Text Label 5150 2200 0    50   ~ 0
 a11
-Text Label 5150 2300 0    50   ~ 0
-#OE
 Text Label 5150 2400 0    50   ~ 0
 a10
 Text Label 5150 2500 0    50   ~ 0
@@ -1926,4 +1920,6 @@ Wire Bus Line
 	4000 1800 4000 3450
 Wire Bus Line
 	800  3450 4000 3450
+Text Label 5000 7100 0    50   ~ 0
+#CS2
 $EndSCHEMATC
