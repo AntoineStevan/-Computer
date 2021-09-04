@@ -1870,6 +1870,8 @@ Wire Wire Line
 	8000 5450 7900 5450
 Wire Wire Line
 	7300 5450 7400 5450
+Text Label 5000 7100 0    50   ~ 0
+#CS2
 Wire Bus Line
 	5200 3600 5550 3600
 Wire Bus Line
@@ -1920,6 +1922,6 @@ Wire Bus Line
 	4000 1800 4000 3450
 Wire Bus Line
 	800  3450 4000 3450
-Text Label 5000 7100 0    50   ~ 0
-#CS2
+Text Label 2400 5000 0    50   ~ 0
+#RAM_E
 $EndSCHEMATC
