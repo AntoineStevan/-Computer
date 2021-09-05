@@ -949,71 +949,27 @@ Wire Wire Line
 	9600 5150 9700 5150
 Wire Wire Line
 	9500 5600 9500 5700
-$Comp
-L Connector:Conn_01x01_Female J1
-U 1 1 61A408F9
-P 6600 900
-F 0 "J1" H 6628 926 50  0000 L CNN
-F 1 "Conn_01x01_Female" H 6628 835 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 6600 900 50  0001 C CNN
-F 3 "~" H 6600 900 50  0001 C CNN
-	1    6600 900 
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x01_Female J2
-U 1 1 61A411EE
-P 6600 1100
-F 0 "J2" H 6628 1126 50  0000 L CNN
-F 1 "Conn_01x01_Female" H 6628 1035 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 6600 1100 50  0001 C CNN
-F 3 "~" H 6600 1100 50  0001 C CNN
-	1    6600 1100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x01_Female J3
-U 1 1 61A414F2
-P 6600 1300
-F 0 "J3" H 6628 1326 50  0000 L CNN
-F 1 "Conn_01x01_Female" H 6628 1235 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 6600 1300 50  0001 C CNN
-F 3 "~" H 6600 1300 50  0001 C CNN
-	1    6600 1300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x01_Female J4
-U 1 1 61A417F2
-P 6600 1500
-F 0 "J4" H 6628 1526 50  0000 L CNN
-F 1 "Conn_01x01_Female" H 6628 1435 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 6600 1500 50  0001 C CNN
-F 3 "~" H 6600 1500 50  0001 C CNN
-	1    6600 1500
-	1    0    0    -1  
-$EndComp
-Text Label 6250 900  2    50   ~ 0
+Text Label 6750 1200 2    50   ~ 0
 MASTER_VCC
-Text Label 6250 1100 2    50   ~ 0
+Text Label 6750 1300 2    50   ~ 0
 MASTER_GND
-Text Label 6250 1300 2    50   ~ 0
+Text Label 6750 1400 2    50   ~ 0
 +5V
-Text Label 6250 1500 2    50   ~ 0
+Text Label 6750 1500 2    50   ~ 0
 GND
 Wire Wire Line
-	6400 1100 6250 1100
+	6900 1300 6750 1300
 Wire Wire Line
-	6250 900  6400 900 
+	6750 1200 6900 1200
 Wire Notes Line width 12
-	6350 800  7450 800 
+	6800 1100 7850 1100
 Wire Notes Line width 12
-	6350 1700 7450 1700
+	6800 1550 7850 1550
 Wire Notes Line width 12
-	6350 1700 6350 800 
+	6800 1550 6800 1100
 Wire Notes Line width 12
-	7450 1700 7450 800 
-Text Notes 6950 1800 0    50   ~ 10
+	7850 1550 7850 1100
+Text Notes 6800 1650 0    50   ~ 10
 power input\n
 Wire Wire Line
 	850  2000 1150 2000
@@ -1375,10 +1331,10 @@ Wire Bus Line
 Text Label 7300 3650 2    50   ~ 0
 MASTER_VCC
 $Comp
-L Connector_Generic:Conn_02x14_Odd_Even J5
+L Connector_Generic:Conn_02x14_Odd_Even J3
 U 1 1 6170C278
 P 7600 3450
-F 0 "J5" H 7650 4350 50  0000 C CNN
+F 0 "J3" H 7650 4350 50  0000 C CNN
 F 1 "Conn_02x14_Odd_Even" H 7650 4250 50  0000 C CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_2x14_P2.54mm_Vertical" H 7600 3450 50  0001 C CNN
 F 3 "~" H 7600 3450 50  0001 C CNN
@@ -1528,69 +1484,36 @@ Wire Wire Line
 Wire Wire Line
 	8550 1500 8900 1500
 Wire Wire Line
-	6400 1500 6250 1500
+	6900 1500 6750 1500
 Wire Wire Line
-	6250 1300 6400 1300
-$Comp
-L Connector:Conn_01x01_Female J7
-U 1 1 613759B1
-P 9550 2950
-F 0 "J7" H 9578 2976 50  0000 L CNN
-F 1 "Conn_01x01_Female" H 9578 2885 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 9550 2950 50  0001 C CNN
-F 3 "~" H 9550 2950 50  0001 C CNN
-	1    9550 2950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x01_Female J8
-U 1 1 613759B7
-P 9550 3150
-F 0 "J8" H 9578 3176 50  0000 L CNN
-F 1 "Conn_01x01_Female" H 9578 3085 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 9550 3150 50  0001 C CNN
-F 3 "~" H 9550 3150 50  0001 C CNN
-	1    9550 3150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x01_Female J9
-U 1 1 613759BD
-P 9550 3350
-F 0 "J9" H 9578 3376 50  0000 L CNN
-F 1 "Conn_01x01_Female" H 9578 3285 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 9550 3350 50  0001 C CNN
-F 3 "~" H 9550 3350 50  0001 C CNN
-	1    9550 3350
-	1    0    0    -1  
-$EndComp
-Text Label 9200 2950 2    50   ~ 0
+	6750 1400 6900 1400
+Text Label 9500 3250 2    50   ~ 0
 +5V
-Text Label 9200 3150 2    50   ~ 0
+Text Label 9500 3350 2    50   ~ 0
 GND
 Wire Wire Line
-	9350 3150 9200 3150
+	9650 3350 9500 3350
 Wire Wire Line
-	9200 2950 9350 2950
+	9500 3250 9650 3250
 Wire Notes Line width 12
-	9300 2850 10400 2850
+	9600 3150 10600 3150
 Wire Notes Line width 12
-	9300 3500 10400 3500
+	9600 3500 10600 3500
 Wire Notes Line width 12
-	9300 3500 9300 2850
+	9600 3500 9600 3150
 Wire Notes Line width 12
-	10400 3500 10400 2850
-Text Notes 9400 3600 0    50   ~ 10
+	10600 3500 10600 3150
+Text Notes 9650 3600 0    50   ~ 10
 clock interface\n
 Wire Wire Line
-	9200 3350 9350 3350
-Text Label 9200 3350 2    50   ~ 0
+	9500 3450 9650 3450
+Text Label 9500 3450 2    50   ~ 0
 CLK
 $Comp
-L Connector_Generic:Conn_02x12_Odd_Even J6
+L Connector_Generic:Conn_02x12_Odd_Even J4
 U 1 1 615EAFC5
 P 7600 5050
-F 0 "J6" H 7650 5767 50  0000 C CNN
+F 0 "J4" H 7650 5767 50  0000 C CNN
 F 1 "Conn_02x12_Odd_Even" H 7650 5676 50  0000 C CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_2x12_P2.54mm_Horizontal" H 7600 5050 50  0001 C CNN
 F 3 "~" H 7600 5050 50  0001 C CNN
@@ -1885,6 +1808,32 @@ Wire Wire Line
 	2350 7450 2300 7450
 Wire Wire Line
 	2300 7450 2300 7300
+Text Label 2300 7300 0    50   ~ 0
++5V
+Text Label 3000 7350 0    50   ~ 0
+GND
+$Comp
+L Connector:Conn_01x03_Male J2
+U 1 1 61385895
+P 9850 3350
+F 0 "J2" H 9822 3374 50  0000 R CNN
+F 1 "Conn_01x03_Male" H 9822 3283 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 9850 3350 50  0001 C CNN
+F 3 "~" H 9850 3350 50  0001 C CNN
+	1    9850 3350
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x04_Male J1
+U 1 1 61614E27
+P 7100 1300
+F 0 "J1" H 7072 1274 50  0000 R CNN
+F 1 "Conn_01x04_Male" H 7072 1183 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical" H 7100 1300 50  0001 C CNN
+F 3 "~" H 7100 1300 50  0001 C CNN
+	1    7100 1300
+	-1   0    0    -1  
+$EndComp
 Wire Bus Line
 	5200 3600 5550 3600
 Wire Bus Line
@@ -1935,8 +1884,4 @@ Wire Bus Line
 	4000 1800 4000 3450
 Wire Bus Line
 	800  3450 4000 3450
-Text Label 2300 7300 0    50   ~ 0
-+5V
-Text Label 3000 7350 0    50   ~ 0
-GND
 $EndSCHEMATC
