@@ -40,7 +40,7 @@
   )
 
   (setup
-    (last_trace_width 0.2)
+    (last_trace_width 0.5)
     (user_trace_width 0.2)
     (user_trace_width 0.25)
     (user_trace_width 0.8)
@@ -1600,8 +1600,7 @@
       (net 60 /#CE))
     (pad 6 smd rect (at -2.90576 2.6416) (size 1.18 0.58) (layers F.Cu F.Paste F.Mask)
       (net 71 /NAND1))
-    (pad 7 smd rect (at -2.90576 3.9116) (size 1.18 0.58) (layers F.Cu F.Paste F.Mask)
-      (net 67 /GND))
+    (pad 7 smd rect (at -2.90576 3.9116) (size 1.18 0.58) (layers F.Cu F.Paste F.Mask))
     (pad 8 smd rect (at 3.15722 3.9116) (size 1.18 0.58) (layers F.Cu F.Paste F.Mask)
       (net 69 /#CS2))
     (pad 9 smd rect (at 3.15722 2.6416) (size 1.18 0.58) (layers F.Cu F.Paste F.Mask)
@@ -1614,8 +1613,7 @@
       (net 50 /CLK))
     (pad 13 smd rect (at 3.15722 -2.4384) (size 1.18 0.58) (layers F.Cu F.Paste F.Mask)
       (net 50 /CLK))
-    (pad 14 smd rect (at 3.15722 -3.7084) (size 1.18 0.58) (layers F.Cu F.Paste F.Mask)
-      (net 68 /+5V))
+    (pad 14 smd rect (at 3.15722 -3.7084) (size 1.18 0.58) (layers F.Cu F.Paste F.Mask))
   )
 
   (module Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder (layer B.Cu) (tedit 5B301BBE) (tstamp 6135FACD)

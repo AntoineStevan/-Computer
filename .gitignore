@@ -253,3 +253,4 @@ wandb/
 *-cache
 *.gbr
 *.drl
+*.lib
