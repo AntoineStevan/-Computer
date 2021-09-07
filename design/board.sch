@@ -33,7 +33,7 @@ U 1 1 61575DEE
 P 9500 5400
 F 0 "SW1" V 9600 5650 50  0000 C CNN
 F 1 "reset" V 9500 5650 50  0000 C CNN
-F 2 "my_buttons:pushbutton_3x4" H 9500 5600 50  0001 C CNN
+F 2 "my_buttons:pushbutton_switch" H 9500 5600 50  0001 C CNN
 F 3 "~" H 9500 5600 50  0001 C CNN
 	1    9500 5400
 	0    -1   -1   0   
